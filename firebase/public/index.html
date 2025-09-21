@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Qreative</title>
+  <meta name="description" content="Qreative — Simple and minimal." />
+  <style>
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: #111;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header {
+      margin-bottom: 60px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 24px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #60a5fa, #34d399);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: #fff;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    nav a {
+      margin: 0 12px;
+      color: #555;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .contact {
+      margin: 60px 0;
+    }
+    footer {
+      margin-top: 80px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">Q</div>
+      <h1>Qreative</h1>
+      <nav>
+        <a href="./legal/ko.html#eula">Terms of Service</a>
+        <a href="./legal/ko.html#privacy">Privacy Policy</a>
+        <!-- <a href="#contact">Contact</a> -->
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:admin@qreative.app">admin@qreative.app</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Qreative</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
